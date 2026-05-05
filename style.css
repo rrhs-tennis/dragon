@@ -63,3 +63,17 @@ footer { border-top: 1px solid #eee; color: #777; padding: 20px 0; font-size: 0.
 .contact-info-block p {
     margin: 5px 0;
 }
+/* Coach Highlight Styles */
+.coach-highlight {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.coach-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #800000;
+}
