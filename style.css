@@ -1,0 +1,65 @@
+/* General Base Styles */
+body { font-family: 'Lato', sans-serif; margin: 0; line-height: 1.6; color: #333; background-color: #fff; }
+
+/* Header */
+.main-header { background: #800000; color: white; padding: 40px 0; border-bottom: 5px solid #cbab73; text-align: center; }
+.header-container { display: flex; align-items: center; justify-content: center; gap: 20px; padding: 0 15px; }
+.logo { height: 90px; width: auto; }
+.main-header h1 { font-size: 2.2rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+
+/* Sections & Headings */
+.container { width: 92%; max-width: 800px; margin: auto; padding: 20px 0; text-align: center; }
+h2, h3 { color: #333; text-transform: uppercase; margin-bottom: 20px; }
+section { padding: 40px 0; }
+
+/* Table Wrapper for iPhone Swipe */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-table { width: 100%; min-width: 500px; border-collapse: collapse; background: #fff; }
+.info-table th { background: #800000; color: white; padding: 15px; text-align: left; }
+.info-table td { padding: 12px 15px; border-bottom: 1px solid #eee; text-align: left; }
+.info-table a { color: #800000; font-weight: bold; text-decoration: none; }
+.status-open { color: #d9534f; font-weight: bold; }
+
+/* Tryout Section */
+.tryouts-section { background: #f4f4f4; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.info-card { background: white; padding: 25px; border-left: 6px solid #cbab73; margin: 20px auto; max-width: 500px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.requirements-box { background: #fffbe6; border: 1px solid #ffe58f; padding: 15px; margin: 20px auto; max-width: 500px; border-radius: 4px; }
+
+.cta-button { 
+    display: inline-block; 
+    background: #800000; 
+    color: white; 
+    padding: 15px 40px; 
+    border-radius: 30px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.cta-button:hover { opacity: 0.9; transform: translateY(-2px); }
+
+/* Connect Section (Bright & Normal Colors) */
+.connect-section { background: #fff; }
+.link-maroon { color: #800000; font-weight: bold; font-size: 1.1rem; text-decoration: underline; }
+
+/* Footer */
+footer { border-top: 1px solid #eee; color: #777; padding: 20px 0; font-size: 0.9rem; text-align: center; }
+
+.contact-info-block {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+.contact-info-block p {
+    margin: 5px 0;
+}
