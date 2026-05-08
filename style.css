@@ -104,19 +104,19 @@ section { padding: 40px 0; }
 
 /* Sizing by height ensures they look uniform in a row */
 .sponsor-link img {
-    height: 50px; 
+    height: 95px; 
     width: auto;
     display: block;
 }
 
 /* Small boost for square logos to match visual weight of wide logos */
 .logo-mack {
-    height: 65px !important; 
+    height: 120px !important; 
 }
 
 .sponsor-link:hover { transform: scale(1.05); }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .sponsor-flex { gap: 25px; }
     .sponsor-link img { height: 40px; }
     .logo-mack { height: 55px !important; }
