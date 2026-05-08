@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ROCK TENNIS | Home</title>
+    <title>Round Rock High School Tennis Booster</title>
+    <!-- Lato is the standard athletic font for Round Rock ISD -->
     <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,16 +12,18 @@
 
     <header class="main-header">
         <div class="header-container">
-            <img src="logo.png" alt="RR Tennis Logo" class="logo">
-            <h1>ROCK TENNIS</h1>
+            <img src="logo.png" alt="RRHS Dragon Logo" class="logo">
+            <div class="header-text">
+                <h1>Round Rock High School Tennis Booster</h1>
+                <p class="tagline">Go Rock Tennis!</p>
+            </div>
         </div>
     </header>
 
     <!-- TEAM PICTURE SECTION -->
-    <section class="hero-image-section" style="padding-top: 20px; background-color: #fff;">
+    <section class="hero-image-section">
         <div class="container">
-            <!-- Ensure 'team-photo.jpg' is uploaded to your GitHub repo -->
-            <img src="team-photo.jpg" alt="RRHS Tennis Team" style="width: 100%; max-width: 1000px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+            <img src="team-photo.jpg" alt="RRHS Tennis Team" class="hero-img">
         </div>
     </section>
 
@@ -32,10 +35,25 @@
             <a href="mailto:tricia_sosa@roundrockisd.org" class="link-maroon">tricia_sosa@roundrockisd.org</a>
         </div>
 
-        <h2 style="margin-top: 40px;">Booster Board Members</h2>
+        <!-- SPONSORS SECTION (Moved back after Coach) -->
+        <section class="sponsors-section">
+            <h2 class="section-title">Our Sponsors</h2>
+            <div class="sponsor-flex">
+                <a href="https://phillipstennis.com" target="_blank" class="sponsor-link">
+                    <img src="mack-phillips-logo.jpg" alt="Mack Phillips Tennis Academy" class="logo-mack">
+                </a>
+                <a href="https://ideal-signs.com" target="_blank" class="sponsor-link">
+                    <img src="ideal-signs-logo.jpg" alt="Ideal Signs" class="logo-ideal">
+                </a>
+            </div>
+        </section>
+
+        <h2 class="section-title" style="margin-top: 40px;">Booster Board Members</h2>
         <div class="table-wrapper">
             <table class="info-table">
-                <thead><tr><th>Position</th><th>Name</th></tr></thead>
+                <thead>
+                    <tr><th>Position</th><th>Name</th></tr>
+                </thead>
                 <tbody>
                     <tr><td>President</td><td>Amy Stancoven</td></tr>
                     <tr><td>VP</td><td>Manish Kalara</td></tr>
@@ -46,13 +64,13 @@
             </table>
         </div>
 
-        <!-- Booster Contacts Section -->
         <div class="contact-info-block">
             <p><strong>Booster General Contact:</strong> <a href="mailto:rockdragontennis@gmail.com" class="link-maroon">rockdragontennis@gmail.com</a></p>
             <p><strong>Treasurer:</strong> <a href="mailto:rrhstennistreasurer@gmail.com" class="link-maroon">rrhstennistreasurer@gmail.com</a></p>
         </div>
     </div>
 
+    <!-- TRYOUTS SECTION -->
     <section class="tryouts-section">
         <div class="container">
             <h2>2026-2027 Try Outs</h2>
@@ -63,47 +81,26 @@
             <div class="requirements-box">
                 <p><strong>Note:</strong> RankOne forms and Physicals must be completed before tryouts.</p>
             </div>
-            <!-- FIXED: Corrected Google Form Link -->
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSejWmspnsCB7zYMyIAtKJjgRwHQjFeivVjVJl_8kGt7aozEUw/viewform?usp=dialog" class="cta-button" target="_blank">Interest Form</a>
+            <a href="https://google.com" class="cta-button" target="_blank">Interest Form</a>
         </div>
     </section>
 
     <!-- MISSION SECTION -->
-    <section class="mission-section" style="background-color: #f9f9f9; border-top: 1px solid #eee;">
-        <div class="container" style="max-width: 900px; padding: 40px 20px;">
-            <h2 style="font-size: 1.2rem; color: #800000;">Our Mission</h2>
-            <p style="font-size: 1.1rem; color: #555; font-style: italic; line-height: 1.8;">
+    <section class="mission-section">
+        <div class="container">
+            <h2 class="mission-title">Our Mission</h2>
+            <p class="mission-text">
                 "The goal of the RRHSTB is to promote sportsmanship and further interest in tennis. Members provide their support to the RRHS tennis athletes, RRHS Tennis Coach and school administration. RRHSTB shall strive to provide encouragement and enthusiasm to tennis players at RRHS and surrounding communities. RRHSTB will endeavor to provide its members and the community at large a current view of the RRHS Tennis Program activities and RRHSTB involvement, thereby promoting and enhancing the RRHS tennis program."
             </p>
         </div>
     </section>
 
-    <!-- SPONSORS SECTION -->
-    <section class="sponsors-section" style="background: #fff; padding: 50px 0; border-top: 1px solid #eee;">
-        <div class="container">
-            <h2 style="color: #800000;">Our Sponsors</h2>
-            <p style="margin-bottom: 30px; color: #666;">A special thanks to the businesses that support Dragon Tennis.</p>
-            <div class="sponsor-links" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                
-                <a href="https://phillipstennis.com" target="_blank" style="padding: 15px 25px; border: 2px solid #800000; color: #800000; text-decoration: none; font-weight: bold; border-radius: 8px;">
-                    Mack Phillips Tennis Academy
-                </a>
-
-                <a href="https://ideal-signs.com" target="_blank" style="padding: 15px 25px; border: 2px solid #800000; color: #800000; text-decoration: none; font-weight: bold; border-radius: 8px;">
-                    Ideal Signs
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="connect-section" style="background-color: #f9f9f9; border-top: 1px solid #eee;">
+    <section class="connect-section">
         <div class="container">
             <h2>Connect With Us</h2>
-            <!-- FIXED: Direct Instagram Link -->
             <p>Instagram: <a href="https://instagram.com" target="_blank" class="link-maroon">@rockdragontennis</a></p>
             <p style="margin-top: 20px;">
-                <a href="https://www.roundrockdragons.com/" target="_blank" class="link-maroon">Official RRHS Athletics Website</a>
+                <a href="https://roundrockisd.org" target="_blank" class="link-maroon">Official RRHS Website</a>
             </p>
         </div>
     </section>

@@ -1,79 +1,234 @@
-/* General Base Styles */
-body { font-family: 'Lato', sans-serif; margin: 0; line-height: 1.6; color: #333; background-color: #fff; }
+/* =========================================
+   General Base Styles 
+   ========================================= */
+body { 
+    font-family: 'Lato', sans-serif; 
+    margin: 0; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color: #fff; 
+}
 
-/* Header */
-.main-header { background: #800000; color: white; padding: 40px 0; border-bottom: 5px solid #cbab73; text-align: center; }
-.header-container { display: flex; align-items: center; justify-content: center; gap: 20px; padding: 0 15px; }
-.logo { height: 90px; width: auto; }
-.main-header h1 { font-size: 2.2rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+/* Header Section */
+.main-header { 
+    background: #800000; 
+    color: white; 
+    padding: 30px 0; 
+    border-bottom: 5px solid #ac9155; 
+    text-align: center; 
+}
 
-/* Sections & Headings */
-.container { width: 92%; max-width: 800px; margin: auto; padding: 20px 0; text-align: center; }
-h2, h3 { color: #333; text-transform: uppercase; margin-bottom: 20px; }
+.header-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+    padding: 0 15px; 
+}
+
+.logo { height: 100px; width: auto; }
+
+.header-text h1 { 
+    font-size: 1.8rem; 
+    margin: 0; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+.tagline {
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-style: italic;
+    margin: 5px 0 0 0;
+    color: #ac9155; 
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .header-container { flex-direction: row; text-align: left; }
+    .header-text h1 { font-size: 2.2rem; }
+}
+
+/* Common Container */
+.container { 
+    width: 92%; 
+    max-width: 900px; 
+    margin: auto; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+.section-title { 
+    color: #800000; 
+    text-transform: uppercase; 
+    margin-bottom: 20px; 
+}
+
 section { padding: 40px 0; }
 
-/* Table Wrapper for iPhone Swipe */
+/* Hero Image */
+.hero-image-section { padding-bottom: 0; background: #fff; }
+.hero-img { 
+    width: 100%; 
+    max-width: 1000px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15); 
+}
+
+/* =========================================
+   Sponsors (Uniform Height & Alignment)
+   ========================================= */
+.sponsors-section { 
+    padding: 20px 0; 
+    margin: 20px 0;
+    border-top: 1px solid #eee; 
+    border-bottom: 1px solid #eee; 
+}
+
+.sponsor-flex { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* Vertically centers the different sized logos */
+    gap: 50px; 
+    flex-wrap: wrap; 
+    margin-top: 15px; 
+}
+
+.sponsor-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+/* Sizing by height ensures they look uniform in a row */
+.sponsor-link img {
+    height: 50px; 
+    width: auto;
+    display: block;
+}
+
+/* Small boost for square logos to match visual weight of wide logos */
+.logo-mack {
+    height: 65px !important; 
+}
+
+.sponsor-link:hover { transform: scale(1.05); }
+
+@media (max-width: 480px) {
+    .sponsor-flex { gap: 25px; }
+    .sponsor-link img { height: 40px; }
+    .logo-mack { height: 55px !important; }
+}
+
+/* =========================================
+   Coach & Board Sections
+   ========================================= */
+.coach-highlight { 
+    padding: 30px; 
+    background: #f9f9f9; 
+    border-radius: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid #eee;
+}
+
+.coach-name { 
+    font-size: 1.6rem; 
+    font-weight: 900; 
+    color: #800000; 
+    margin: 5px 0; 
+}
+
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.info-table { width: 100%; min-width: 500px; border-collapse: collapse; background: #fff; }
-.info-table th { background: #800000; color: white; padding: 15px; text-align: left; }
-.info-table td { padding: 12px 15px; border-bottom: 1px solid #eee; text-align: left; }
-.info-table a { color: #800000; font-weight: bold; text-decoration: none; }
-.status-open { color: #d9534f; font-weight: bold; }
+.info-table { 
+    width: 100%; 
+    min-width: 450px; 
+    border-collapse: collapse; 
+    background: #fff; 
+}
 
-/* Tryout Section */
-.tryouts-section { background: #f4f4f4; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
-.info-card { background: white; padding: 25px; border-left: 6px solid #cbab73; margin: 20px auto; max-width: 500px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-.requirements-box { background: #fffbe6; border: 1px solid #ffe58f; padding: 15px; margin: 20px auto; max-width: 500px; border-radius: 4px; }
+.info-table th { 
+    background: #800000; 
+    color: white; 
+    padding: 15px; 
+    text-align: left; 
+}
+
+.info-table td { 
+    padding: 12px 15px; 
+    border-bottom: 1px solid #eee; 
+    text-align: left; 
+}
+
+/* Tryouts & CTA */
+.tryouts-section { background: #f8f8f8; border-top: 1px solid #ddd; }
+.info-card { 
+    background: white; 
+    padding: 25px; 
+    border-left: 6px solid #ac9155; 
+    margin: 20px auto; 
+    max-width: 600px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+}
+
+.requirements-box { 
+    background: #fffbe6; 
+    border: 1px solid #ffe58f; 
+    padding: 15px; 
+    margin: 20px auto; 
+    max-width: 600px; 
+}
 
 .cta-button { 
     display: inline-block; 
     background: #800000; 
     color: white; 
     padding: 15px 40px; 
-    border-radius: 30px; 
+    border-radius: 4px; 
     text-decoration: none; 
     font-weight: bold; 
-    margin-top: 10px;
-    transition: 0.3s;
+    text-transform: uppercase;
+    transition: background 0.3s;
 }
-.cta-button:hover { opacity: 0.9; transform: translateY(-2px); }
 
-/* Connect Section (Bright & Normal Colors) */
-.connect-section { background: #fff; }
-.link-maroon { color: #800000; font-weight: bold; font-size: 1.1rem; text-decoration: underline; }
+.cta-button:hover { background: #a00000; }
 
-/* Footer */
-footer { border-top: 1px solid #eee; color: #777; padding: 20px 0; font-size: 0.9rem; text-align: center; }
+/* Mission & Links */
+.mission-text { 
+    font-size: 1.1rem; 
+    color: #555; 
+    font-style: italic; 
+    max-width: 800px; 
+    margin: auto; 
+}
 
-.contact-info-block {
-    margin-top: 20px;
-    padding: 10px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    font-size: 0.95rem;
+.link-maroon { 
+    color: #800000; 
+    font-weight: bold; 
+    text-decoration: none; 
 }
-.contact-info-block p {
-    margin: 5px 0;
+
+.link-maroon:hover { text-decoration: underline; }
+
+.contact-info-block { 
+    margin-top: 20px; 
+    padding: 15px; 
+    background: #f9f9f9; 
+    border-radius: 8px; 
 }
-/* Coach Highlight Styles */
-.coach-highlight {
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    border: 1px solid #eee;
-    margin-bottom: 20px;
-}
-.coach-name {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin: 5px 0;
-    color: #800000;
+
+footer { 
+    padding: 30px 0; 
+    color: #888; 
+    font-size: 0.9rem; 
+    border-top: 1px solid #eee; 
+    text-align: center; 
 }
